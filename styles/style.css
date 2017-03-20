@@ -1,0 +1,246 @@
+html, body, p, h1, h2, h3, h4, h5, h6, ul, li {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+ul, li{
+	list-style: none;
+}
+body {
+	font-size: 16px;
+	font-family: Lato, sans-serif;
+	/* почему-то не отрабатывает запись
+	font: 16px Lato sans-serif; */;
+}
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+.top_bar {
+	border-bottom: 1px solid #ebebeb;
+	background: repeat-x url('../images/top_bar1.png');
+	height: 15px;
+	/* точки не знаю как сделать */
+}
+.header {
+	background: repeat-x url('../images/header_background.png');
+	/*	сделал бэкграундом потому что не помню
+	есть ли градиент в css2 */
+}
+.header .wrapper {
+	padding: 25px 0;
+	overflow: hidden;
+	/* у меня на дизайне паддинг 30 */
+}
+.logo {
+	font: bold 20px Arial;
+	text-transform: uppercase;
+	color: #656363;
+	float: left;
+	margin-right: 40px;
+	line-height: 40px;
+}
+.menu_list {
+	float: left;
+	line-height: 40px;
+	padding-left: 40px;
+	border-left: 1px solid #e1e1e1;
+}
+.menu_item {
+	display: inline-block;
+	margin-right: 45px;
+}
+.menu_link {
+	color: #7f7f7f;
+	font-size: 16px;
+}
+/*
+.menu_link:hover {
+color: #f54d56;
+}
+*/
+.cart {
+	float: right;
+}
+.slider {
+	height: 430px;
+	background-color: #edecec;
+	margin-bottom: 60px;
+}
+.slider_inner {
+	padding: 135px 30px 0;
+	color: #fff;
+}
+.slider_title {
+	font: bold 40px AvenirLT Black, sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.slider_description {
+	color: #fff;
+	font: 22px AvenirLT Light, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-bottom: 30px;
+}
+.slider_button {
+	display: inline-block;
+	background-color: #fff;
+	text-transform: uppercase;
+	color: #65889b;
+	padding: 18px 50px;
+	font: bold 18px Lato, sans-serif;
+}
+.slider_button:hover {
+	color: #f54d56;
+}
+.products_block {
+	text-align: center;
+	font-size: 0;
+	margin-bottom: 60px;
+}
+.products_title {
+	font: bold 20px Lato, sans-serif;
+	text-transform: uppercase;
+	color: #656363;
+	margin-bottom: 40px;
+}
+.product_item {
+	border: 4px solid #f7f6f6;
+	padding: 25px 0;
+	width: 292px;
+	display: inline-block;
+	margin-left: 40px;
+	position: relative;
+}
+h3 + .product_item {
+	margin-left: 0;
+}
+.product_title {
+	font: 16px OpenSans, sans-serif;
+	text-transform: uppercase;
+	color: #717171;
+	margin-bottom: 15px;
+}
+.product_image {
+	margin-bottom: 50px;
+}
+.product_price {
+	font: bold 18px OpenSans, sans-serif;
+	color: #717171;
+}
+.sale {
+	font: 16px OpenSans Semibold, sans-serif;
+	color: #fff;
+	position: absolute;
+	background-color: #f54d56;
+	padding: 15px 19px;
+	border-left: 4px solid #de3841;
+	top: 26px;
+	left: -4px;
+}
+.brands {
+	margin-bottom: 60px;
+}
+.brand_item {
+	display: inline-block;
+	border: 3px solid #edecec;
+	padding: 25px 28px;
+	margin-left: 56px;
+}
+.brand_item:first-child {
+	margin-left: 0;
+}
+.content {
+	border-bottom: 1px solid #f2f1f1;
+}
+.footer {
+	background-color: #fdfcfc;
+}
+.footer_block {
+	padding-top: 60px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.block_title {
+	font: bold 20px Lato, sans-serif;
+	color: #656363;
+	text-transform: capitalize;
+	margin-bottom: 38px;
+}
+.stores, .blog, .support {
+	display: inline-block;
+	text-align: left;
+	margin: 0 0 60px 36px;
+	vertical-align: top;
+	width: 300px;
+}
+.stores {
+	margin-left: 0;
+	padding-right: 125px;
+	width: 175px;
+	line-height: 25px;
+}
+.stores_item, .blog_item, .support_list_item {
+	color: #868585;
+	font: 14px Lato, sans-serif;
+	line-height: 24px;
+}
+.stores_item {
+	margin-bottom: 38px;
+	white-space: pre-line;
+}
+.stores_item span {
+	color: #717171;
+	font: bold 14px Lato, sans-serif;
+}
+.socials_item, .payment_item {
+	display: inline-block;
+	margin-right: 21px;
+}
+.socials_item:last-child {
+	margin-right: 0;
+}
+.socials_list {
+	margin-top: 36px;
+}
+.blog_item {
+	margin-bottom: 28px;
+}
+.blog_item_link {
+	font: bold 16px Lato, sans-serif;
+	color: #717171;
+}
+.blog_item_link:hover, .support_list_link:hover {
+	color: #f54d56;
+}
+.blog_item_span {
+	color: #868585;
+}
+.support_list_link {
+	color: #868585;
+	font: 14px Lato, sans-serif;
+}
+.support_list {
+	display: inline-block;
+	padding-right: 45px;
+	vertical-align: top;
+}	
+.footer_bottom {
+	border-top: 1px solid #ffffff;
+}
+.copyright {
+	float: left;
+	color: #a6a6a6;
+	font: 13px Lato, sans-serif;
+	line-height: 60px;
+}
+.copyright_link {
+	font: bold 13px Lato, sans-serif;
+	color: #939292;
+}
+.payment_list {
+	float: right;
+	padding-top: 20px;
+}
